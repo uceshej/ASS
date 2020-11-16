@@ -93,7 +93,7 @@ def rca():    #Classfily all the points outside,inside and on the boundary
             #check whether the point is on horizontal segments
             elif y==y1==y2 and (x1<x<x2 or x2<x<x1):
                 p[3][i]='boundary'
-
+            #check the common situation
             elif y1<=y<y2 or y2<=y<y1:
                 inter=(y-y1)*(x2-x1)/(y2-y1)+x1
                 if inter==x:
