@@ -125,7 +125,7 @@ def main():
     output()
     print('plot polygon and points')
     m = mbr()
-    p = plot_polygon()
+    p = plot_polygon()    #plot the MBR
     plotter.add_polygon(p[1], p[2])
     plt.plot(m[0], m[1])
     p = rca()
